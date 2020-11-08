@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Sign-up</title>
+  <link rel="icon" href="../icons/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body style="font-family: Verdana, sans-serif;background-color: #cc0e74;">
+
+
+
+  <div class="navbar" style="font-family:Verdana,sans-serif;color:#16a596;background-color:white;">
+    <h1>
+      <font size="36">🏥</font>&nbsp;&nbsp;APOLLO HOSPITAL
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      (Hospital Management System)&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+      <font size="3">Toll-Free Number:📞+918564858420</font>
+    </h1>
+
+    <hr size="4" color="#799351">
+    <div class="navbar2">
+      <h2><a href="index.html">Home</a>&nbsp;&nbsp;<a href="patient.html">Patient&nbsp;Care&nbsp;&&nbsp;Services</a>&nbsp;&nbsp;<a href="opd_schedule.html">OPD&nbsp;Schedule&nbsp;&nbsp;<a href="specialists.html">Specialists</a>&nbsp;&nbsp;
+          <a href="Career_Page.html">Career&nbsp;Page&nbsp;&nbsp;<a href="Log-in.html">Log-in</a>&nbsp;<a href="Sign-up.html">Sign-Up</a>&nbsp;</h2>
+
+    </div>
+  </div>
+
+
+  <div class="Container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h1 style="font-family: Britanic Bold ,sans-serif; color:yellow; background-color:white">
+          <center>Sign Up<center>
+        </h1>
+        <form name="form" action="#" style="background-color: white; border:3px solid grey; font-size:16px; padding-left:20px;">
+
+          <br><br>
+          First Name:&nbsp;<input type="text" name="name" style="width:30%;">&nbsp;&nbsp;&nbsp;&nbsp;Last Name:&nbsp;<input type="text" name="lname" style="width:30%;" />
+          <br>
+          <br>
+          Gender:&nbsp;&nbsp;<input type="radio" name="A" />Male&nbsp;&nbsp;<input type="radio" name="A" />Female
+          &nbsp;&nbsp;&nbsp;&nbsp;
+
+          Date of Birth:<input type="date" />&nbsp;&nbsp;
+          <br>
+          <br>
+          City:
+          <select style="color:red; width: 40%;  font-family:Arial,sans-serif;">Amritsar<option selected="selected">Amritsar</option>
+            <option>Chennai</option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+          </select>
+          City:
+          <select style="c width: 40%; color:green;  font-family:Arial,sans-serif;">
+            <option selected="selected">Punjab</option>
+            <option>Tamil Naidu</option>
+            <option>Delhi</option>
+            <option>Maharashtra</option>
+          </select>
+          <br><br>
+          Email-id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" style="width:50%"><br><br>
+          Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pass" style="width:50%" /><br><br>Confirm Password:&nbsp;<input type="text" name="cpass" style="width:50%" />
+          <br><br>
+          <center><input onclick="abc()" style="font-size:20px; color:orange;  background-color: yellow;" type="button" value="SUBMIT YOUR DETAILS" /></center>
+        </form>
+      </div>
+
+      <script>
+        function abc() {
+          if (document.form.pass.value == document.form.cpass.value) {
+            alert('Submitting!!');
+            alert('Redirecting To Your Website');
+            window.open('index.html');
+          } else {
+            alert('Password Should Match with Confirm Password.');
+          }
+        }
+      </script>
+</body>
+
+</html>
